@@ -14,11 +14,15 @@ RewriteRule ^Logout$ backend/logout.php [L]
 
 # UI
 RewriteRule ^Home$ index.php [L]
-RewriteRule ^Main$ frontend/landing/main.php [L]
-RewriteRule ^Ebooks$ frontend/landing/ebooks.php [L]
-RewriteRule ^Ebook$ frontend/landing/ebook.php [L]
-RewriteRule ^Video$ frontend/landing/video.php [L]
-RewriteRule ^TapChi$ frontend/landing/tapchi.php [L]
+RewriteRule ^Main$ frontend/main.php [L]
+RewriteRule ^Ebooks$ frontend/ebooks.php [L]
+RewriteRule ^Ebook$ frontend/ebook.php [L]
+RewriteRule ^Video$ frontend/video.php [L]
+RewriteRule ^TapChi$ frontend/tapchi.php [L]
+RewriteRule ^EbookDetail$ frontend/ebook_detail.php [L]
 
 
-
+#admin
+RewriteRule ^Upload$ upload.php [L]
+RewriteRule ^Search$ search.php [L]
+RewriteRule ^Manage/Ebooks$ admin/manage_ebooks.php [L]
